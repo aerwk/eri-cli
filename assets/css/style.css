@@ -686,6 +686,47 @@ html.curtain-running #terrain-stage {
   text-decoration-color: currentColor;
 }
 
+/* Full-screen video opened from the subtext link */
+.video-overlay-open {
+  overflow: hidden;
+}
+
+.video-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 4vw, 64px);
+  background: rgba(0, 0, 0, .92);
+}
+
+.video-overlay-frame {
+  width: min(100%, calc((100svh - 2 * clamp(16px, 4vw, 64px)) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  border: 0;
+  background: #000;
+}
+
+.video-overlay-close {
+  position: absolute;
+  top: var(--edge);
+  right: var(--edge);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid rgba(229, 231, 235, .4);
+  background: transparent;
+  color: #E5E7EB;
+  font: 24px/1 var(--authentic);
+  cursor: pointer;
+}
+
+.video-overlay-close:hover,
+.video-overlay-close:focus-visible {
+  border-color: #E5E7EB;
+}
+
 @media (min-width: 1536px) {
   .page {
     max-width: 1680px;
