@@ -142,56 +142,6 @@
     console.warn('Canvas fallback initialization skipped:', err);
   }
 
-  const projectData = [
-    {
-      status: 'In use',
-      title: 'HomeLab',
-      copy: 'A self-hosted network and server stack used by 29 friends and family, running UniFi routing, Proxmox virtualization, Docker containers, and automated storage.',
-      facts: [['Use', '23 regular users'], ['Built with', 'UniFi / Proxmox / Docker'], ['Runs', 'Self-hosted, 24/7']]
-    },
-    {
-      status: 'Released',
-      title: 'Disclaude Sesh',
-      copy: 'An open-source Discord bridge for starting, driving and supervising Claude Code sessions on a headless server from a phone, with documentation and versioned releases.',
-      facts: [['Access', 'Discord / phone'], ['Built with', 'TypeScript / Bun / systemd'], ['Evidence', 'Open source release']]
-    },
-    {
-      status: 'Released',
-      title: 'Usage Meter',
-      copy: 'A fork of an open-source Stream Deck plugin that reports Claude usage limits and local token and cost totals, extended with dial support, a vendored dependency and a release gate.',
-      facts: [['Device', 'Stream Deck and Stream Deck+'], ['Built with', 'TypeScript / Node.js'], ['Change', 'Dial support / release gate']]
-    }
-  ];
-
-  const projectButtons = [...document.querySelectorAll('.project-list [data-project]')];
-  const factLabels = ['fact-label-one', 'fact-label-two', 'fact-label-three'];
-  const factValues = ['fact-one', 'fact-two', 'fact-three'];
-  function selectProject(index) {
-    const project = projectData[index];
-    projectButtons.forEach((btn, btnIndex) => {
-      btn.setAttribute('aria-pressed', String(btnIndex === index));
-    });
-    document.querySelector('#project-status').textContent = project.status;
-    document.querySelector('#selected-project-title').textContent = project.title;
-    document.querySelector('#project-copy').textContent = project.copy;
-    project.facts.forEach((fact, factIndex) => {
-      document.getElementById(factLabels[factIndex]).textContent = fact[0];
-      document.getElementById(factValues[factIndex]).textContent = fact[1];
-    });
-  }
-  projectButtons.forEach((btn, index) => {
-    btn.addEventListener('pointerenter', () => selectProject(index));
-    btn.addEventListener('focus', () => selectProject(index));
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      selectProject(index);
-    });
-  });
-
-  if (typeof window.initSnapScroller === 'function') {
-    window.initSnapScroller('main > .page');
-  }
-
   let threeLoaded = false;
   function loadThreeScripts() {
     if (threeLoaded) return;

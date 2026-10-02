@@ -12,17 +12,12 @@ const modules = [
   'layout.css',
   'components/header.css',
   'components/footer.css',
-  'components/lattice.css',
-  'components/project-card.css',
-  'pages/home.css',
-  'pages/projects.css',
-  'pages/about.css',
-  'pages/blog.css'
+  'pages/home.css'
 ];
 
 function generateBundle() {
   const chunks = [
-    '/* ERI / CLI — bundled stylesheet */\n'
+    '/* N5HQ — bundled stylesheet */\n'
   ];
 
   for (const relPath of modules) {

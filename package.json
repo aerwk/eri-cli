@@ -1,22 +1,16 @@
 {
-  "name": "eri-cli",
-  "version": "1.1.0",
+  "name": "n5hq-homepage",
+  "version": "0.1.0",
   "private": true,
-  "description": "Eric Li — Infrastructure, Homelab & Systems Engineering Portfolio",
-  "homepage": "https://natchannnn.github.io/eri-cli/",
+  "description": "N5HQ homepage",
+  "homepage": "https://www.n5hq.me",
   "scripts": {
-    "build:css": "node scripts/build-css.js",
-    "build:blog": "node scripts/build-blog.js",
-    "build": "node scripts/build-css.js && node scripts/build-blog.js",
-    "test": "node scripts/verify.js"
+    "build:css": "node scripts/build-css.js"
   },
   "keywords": [
-    "portfolio",
-    "systems-engineering",
-    "infrastructure",
-    "threejs",
-    "homelab"
+    "static-site",
+    "threejs"
   ],
-  "author": "Eric Li <helloworld@n5hq.me>",
+  "author": "N5HQ <helloworld@n5hq.me>",
   "license": "UNLICENSED"
 }

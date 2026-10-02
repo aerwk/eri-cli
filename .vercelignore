@@ -1,0 +1,7 @@
+scripts/
+package.json
+README.md
+LICENSE.md
+THIRD_PARTY_NOTICES.md
+.gitignore
+.gitattributes

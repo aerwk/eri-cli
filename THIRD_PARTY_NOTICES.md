@@ -6,13 +6,13 @@ The project license does not cover the fonts or vendored library listed here.
 
 ### PP Kyoto
 - **Copyright**: (c) 2023 Pangram Pangram Foundry.
-- **Usage**: Licensed privately for this portfolio's web deployment.
+- **Usage**: Licensed for use on n5hq.me.
 - **Website**: https://pangrampangram.com
 
 ### Pitch Sans
 - **Copyright**: (c) 2017 Klim Type Foundry. All rights reserved.
 - **Format**: WOFF2 / WOFF (Web Font Licence).
-- **Usage**: Licensed privately for this portfolio's web deployment.
+- **Usage**: Licensed for use on n5hq.me.
 - **Website**: https://klim.co.nz
 
 ### AUTHENTIC Sans
