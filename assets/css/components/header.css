@@ -45,10 +45,12 @@
   border: 0;
   padding: 0;
   cursor: pointer;
+  color: var(--signal);
 }
 
 .site-logo > canvas,
-.site-logo > img {
+.site-logo > img,
+.site-logo > svg {
   position: absolute;
   inset: 0;
   display: block;
@@ -61,7 +63,8 @@
   transition: none;
 }
 
-.site-logo.site-logo-ready > img {
+.site-logo.site-logo-ready > img,
+.site-logo.site-logo-ready > svg {
   visibility: hidden;
 }
 
