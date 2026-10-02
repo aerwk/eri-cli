@@ -7,8 +7,8 @@
     <style>
       .cube-edge {
         fill: none;
-        stroke: #E5E7EB;
-        stroke-width: 16;
+        stroke: #3B82F6;
+        stroke-width: 18;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
@@ -16,10 +16,10 @@
   </defs>
 
   <!-- Left Face (Empty, Dark Solid Shading) -->
-  <path d="M140 253.7 L487.5 440 L487.5 656 L140 469.7 Z" fill="#0A0C10"/>
+  <path d="M140 253.7 L487.5 440 L487.5 656 L140 469.7 Z" fill="#08090C"/>
 
   <!-- Right Face (Empty, Light Solid Shading) -->
-  <path d="M487.5 440 L860 266.3 L860 482.3 L487.5 656 Z" fill="#13161F"/>
+  <path d="M487.5 440 L860 266.3 L860 482.3 L487.5 656 Z" fill="#0D111A"/>
 
   <!-- Top Face (Maze Monogram) -->
   <path d="M512.5 80 L860 266.3 L487.5 440 L140 253.7 Z" fill="#08090C"/>

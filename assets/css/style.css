@@ -261,8 +261,8 @@ button {
   display: block;
 }
 
-/* Site logo component */
-.site-logo {
+/* ERI / CLI Pillar Motion Logo Component */
+.eri-cli-logo {
   --logo-size: clamp(110px, 8.4vw, 145px);
   position: relative;
   display: inline-block;
@@ -278,12 +278,10 @@ button {
   border: 0;
   padding: 0;
   cursor: pointer;
-  color: var(--signal);
 }
 
-.site-logo > canvas,
-.site-logo > img,
-.site-logo > svg {
+.eri-cli-logo > canvas,
+.eri-cli-logo > img {
   position: absolute;
   inset: 0;
   display: block;
@@ -296,12 +294,11 @@ button {
   transition: none;
 }
 
-.site-logo.site-logo-ready > img,
-.site-logo.site-logo-ready > svg {
+.eri-cli-logo.eri-cli-logo-ready > img {
   visibility: hidden;
 }
 
-.site-logo:focus-visible {
+.eri-cli-logo:focus-visible {
   outline: 1px solid #718bce;
   outline-offset: 3px;
 }
@@ -451,7 +448,7 @@ button {
     gap: 18px;
   }
 
-  .site-logo {
+  .eri-cli-logo {
     --logo-size: 96px;
     max-width: 96px;
     max-height: 96px;
