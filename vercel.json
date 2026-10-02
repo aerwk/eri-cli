@@ -9,21 +9,94 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     }
   ],
   "redirects": [
-    { "source": "/lab/:path*", "destination": "/", "permanent": true },
-    { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/blog/:path*", "destination": "https://ericli.n5hq.me/blog/:path*", "permanent": true },
-    { "source": "/portfolio/:path*", "destination": "https://ericli.n5hq.me/portfolio/:path*", "permanent": true },
-    { "source": "/about/:path*", "destination": "https://ericli.n5hq.me/about/:path*", "permanent": true },
-    { "source": "/portal/:path*", "destination": "https://portal.n5hq.me/", "permanent": true },
-    { "source": "/dev/v3/:path*", "destination": "https://ericli.n5hq.me/:path*", "permanent": true }
+    {
+      "source": "/lab/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "https://ericli.n5hq.me/blog/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/:path*",
+      "destination": "https://ericli.n5hq.me/portfolio/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/about/:path*",
+      "destination": "https://ericli.n5hq.me/about/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/portal/:path*",
+      "destination": "https://portal.n5hq.me/",
+      "permanent": true
+    },
+    {
+      "source": "/dev/v3/:path*",
+      "destination": "https://ericli.n5hq.me/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/lab/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "https://ericli.n5hq.me/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/",
+      "destination": "https://ericli.n5hq.me/portfolio/",
+      "permanent": true
+    },
+    {
+      "source": "/about/",
+      "destination": "https://ericli.n5hq.me/about/",
+      "permanent": true
+    },
+    {
+      "source": "/portal/",
+      "destination": "https://portal.n5hq.me/",
+      "permanent": true
+    },
+    {
+      "source": "/dev/v3/",
+      "destination": "https://ericli.n5hq.me/",
+      "permanent": true
+    }
   ]
 }
